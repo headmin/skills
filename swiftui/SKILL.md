@@ -12,6 +12,13 @@ Complete SwiftUI framework reference from Apple Developer Documentation (2026).
 1. Identify which topic area the task involves from the index below
 2. Read only the relevant reference file(s) — do not load all files
 3. Each reference file has its own table of contents at the top for fast scanning
+4. **Fetching detailed docs:** All links in the reference files are relative paths (e.g. `/documentation/swiftui/view/disabled(_:)`). To get full API documentation (parameters, discussion, code examples, availability), fetch the JSON endpoint via `WebFetch`:
+   ```
+   https://developer.apple.com/tutorials/data{relative_path}.json
+   ```
+   Example: `/documentation/swiftui/view/disabled(_:)` → fetch `https://developer.apple.com/tutorials/data/documentation/swiftui/view/disabled(_:).json`
+   
+   The JSON response contains `abstract`, `primaryContentSections` (declarations, parameters, discussion, code listings), and `metadata` (platform availability).
 
 ## Topic Index
 
