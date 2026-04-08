@@ -14,25 +14,19 @@
 ### Displaying SwiftUI views in AppKit
 
 - [Unifying your app's animations](/documentation/swiftui/unifying-your-app-s-animations) (article)
-- [NSHostingController](/documentation/swiftui/nshostingcontroller) — embed SwiftUI view hierarchy in an AppKit window via NSViewController
-- [NSHostingView](/documentation/swiftui/nshostingview) — embed SwiftUI view hierarchy in an AppKit NSView
-- [NSHostingMenu](/documentation/swiftui/nshostingmenu) — create AppKit NSMenu from SwiftUI views
-- [NSHostingSizingOptions](/documentation/swiftui/nshostingsizingoptions) — sizing options for NSHostingController/NSHostingView
-- [NSHostingSceneRepresentation](/documentation/swiftui/nshostingscenerepresentation) — represent a SwiftUI scene in AppKit
-- [NSHostingSceneBridgingOptions](/documentation/swiftui/nshostingscenebridgingoptions) — control what scene properties bridge to AppKit
+- [NSHostingController](/documentation/swiftui/nshostingcontroller) — embed SwiftUI in AppKit via NSViewController; [NSHostingSizingOptions](/documentation/swiftui/nshostingsizingoptions)
+- [NSHostingView](/documentation/swiftui/nshostingview) — embed SwiftUI in AppKit NSView
+- [NSHostingMenu](/documentation/swiftui/nshostingmenu) — NSMenu from SwiftUI views
+- [NSHostingSceneRepresentation](/documentation/swiftui/nshostingscenerepresentation) — SwiftUI scene in AppKit; [NSHostingSceneBridgingOptions](/documentation/swiftui/nshostingscenebridgingoptions)
 
 ### Adding AppKit views to SwiftUI view hierarchies
 
-- [NSViewRepresentable](/documentation/swiftui/nsviewrepresentable) — protocol to wrap an AppKit NSView for use in SwiftUI
-- [NSViewRepresentableContext](/documentation/swiftui/nsviewrepresentablecontext) — context for NSViewRepresentable updates
-- [NSViewControllerRepresentable](/documentation/swiftui/nsviewcontrollerrepresentable) — protocol to wrap an AppKit NSViewController for use in SwiftUI
-- [NSViewControllerRepresentableContext](/documentation/swiftui/nsviewcontrollerrepresentablecontext) — context for NSViewControllerRepresentable updates
+- [NSViewRepresentable](/documentation/swiftui/nsviewrepresentable) — wrap AppKit NSView for SwiftUI; [Context](/documentation/swiftui/nsviewrepresentablecontext)
+- [NSViewControllerRepresentable](/documentation/swiftui/nsviewcontrollerrepresentable) — wrap AppKit NSViewController for SwiftUI; [Context](/documentation/swiftui/nsviewcontrollerrepresentablecontext)
 
 ### Adding AppKit gesture recognizers into SwiftUI view hierarchies
 
-- [NSGestureRecognizerRepresentable](/documentation/swiftui/nsgesturerecognizerrepresentable) — protocol to wrap AppKit gesture recognizer for SwiftUI
-- [NSGestureRecognizerRepresentableContext](/documentation/swiftui/nsgesturerecognizerrepresentablecontext) — context for gesture recognizer updates
-- [NSGestureRecognizerRepresentableCoordinateSpaceConverter](/documentation/swiftui/nsgesturerecognizerrepresentablecoordinatespaceconverter) — coordinate space conversion
+- [NSGestureRecognizerRepresentable](/documentation/swiftui/nsgesturerecognizerrepresentable) — wrap AppKit gesture recognizer for SwiftUI; [Context](/documentation/swiftui/nsgesturerecognizerrepresentablecontext), [CoordinateSpaceConverter](/documentation/swiftui/nsgesturerecognizerrepresentablecoordinatespaceconverter)
 
 - [UIKit integration](/documentation/swiftui/uikit-integration) (article)
 
@@ -40,44 +34,33 @@
 
 - [Using SwiftUI with UIKit](/documentation/uikit/using-swiftui-with-uikit) (article)
 - [Unifying your app's animations](/documentation/swiftui/unifying-your-app-s-animations) (article)
-- [UIHostingController](/documentation/swiftui/uihostingcontroller) — embed SwiftUI view hierarchy in a UIKit view controller
-- [UIHostingControllerSizingOptions](/documentation/swiftui/uihostingcontrollersizingoptions) — sizing options for UIHostingController
-- [UIHostingConfiguration](/documentation/swiftui/uihostingconfiguration) — use SwiftUI views as UICollectionView/UITableView cell content
-- [UIHostingSceneDelegate](/documentation/swiftui/uihostingscenedelegate) — protocol for UIScene delegate hosting SwiftUI scenes
+- [UIHostingController](/documentation/swiftui/uihostingcontroller) — embed SwiftUI in UIKit view controller; [UIHostingControllerSizingOptions](/documentation/swiftui/uihostingcontrollersizingoptions)
+- [UIHostingConfiguration](/documentation/swiftui/uihostingconfiguration) — SwiftUI as UICollectionView/UITableView cell content
+- [UIHostingSceneDelegate](/documentation/swiftui/uihostingscenedelegate) — UIScene delegate hosting SwiftUI scenes
 
 ### Adding UIKit views to SwiftUI view hierarchies
 
-- [UIViewRepresentable](/documentation/swiftui/uiviewrepresentable) — protocol to wrap a UIKit UIView for use in SwiftUI
-- [UIViewRepresentableContext](/documentation/swiftui/uiviewrepresentablecontext) — context for UIViewRepresentable updates
-- [UIViewControllerRepresentable](/documentation/swiftui/uiviewcontrollerrepresentable) — protocol to wrap a UIKit UIViewController for use in SwiftUI
-- [UIViewControllerRepresentableContext](/documentation/swiftui/uiviewcontrollerrepresentablecontext) — context for UIViewControllerRepresentable updates
+- [UIViewRepresentable](/documentation/swiftui/uiviewrepresentable) — wrap UIKit UIView for SwiftUI; [Context](/documentation/swiftui/uiviewrepresentablecontext)
+- [UIViewControllerRepresentable](/documentation/swiftui/uiviewcontrollerrepresentable) — wrap UIKit UIViewController for SwiftUI; [Context](/documentation/swiftui/uiviewcontrollerrepresentablecontext)
 
 ### Adding UIKit gesture recognizers into SwiftUI view hierarchies
 
-- [UIGestureRecognizerRepresentable](/documentation/swiftui/uigesturerecognizerrepresentable) — protocol to wrap UIKit gesture recognizer for SwiftUI
-- [UIGestureRecognizerRepresentableContext](/documentation/swiftui/uigesturerecognizerrepresentablecontext) — context for gesture recognizer updates
-- [UIGestureRecognizerRepresentableCoordinateSpaceConverter](/documentation/swiftui/uigesturerecognizerrepresentablecoordinatespaceconverter) — coordinate space conversion
+- [UIGestureRecognizerRepresentable](/documentation/swiftui/uigesturerecognizerrepresentable) — wrap UIKit gesture recognizer for SwiftUI; [Context](/documentation/swiftui/uigesturerecognizerrepresentablecontext), [CoordinateSpaceConverter](/documentation/swiftui/uigesturerecognizerrepresentablecoordinatespaceconverter)
 
-### Sharing configuration information
+### Sharing configuration / Hosting ornaments
 
-- [UITraitBridgedEnvironmentKey](/documentation/swiftui/uitraitbridgedenvironmentkey) — protocol to bridge UIKit traits and SwiftUI environment values
-
-### Hosting an ornament in UIKit
-
-- [UIHostingOrnament](/documentation/swiftui/uihostingornament) — host SwiftUI ornament content in UIKit (visionOS)
-- [UIOrnament](/documentation/swiftui/uiornament) — UIKit ornament base
+- [UITraitBridgedEnvironmentKey](/documentation/swiftui/uitraitbridgedenvironmentkey) — bridge UIKit traits and SwiftUI environment values
+- [UIHostingOrnament](/documentation/swiftui/uihostingornament) — host SwiftUI ornament in UIKit (visionOS); [UIOrnament](/documentation/swiftui/uiornament)
 
 - [WatchKit integration](/documentation/swiftui/watchkit-integration) (article)
 
 ### Displaying SwiftUI views in WatchKit
 
-- [WKHostingController](/documentation/swiftui/wkhostingcontroller) — embed SwiftUI view in a WatchKit interface controller
-- [WKUserNotificationHostingController](/documentation/swiftui/wkusernotificationhostingcontroller) — host SwiftUI views in WatchKit notification interface
+- [WKHostingController](/documentation/swiftui/wkhostingcontroller) — embed SwiftUI in WatchKit; [WKUserNotificationHostingController](/documentation/swiftui/wkusernotificationhostingcontroller) — notification interface
 
 ### Adding WatchKit views to SwiftUI view hierarchies
 
-- [WKInterfaceObjectRepresentable](/documentation/swiftui/wkinterfaceobjectrepresentable) — protocol to wrap WatchKit interface object for SwiftUI
-- [WKInterfaceObjectRepresentableContext](/documentation/swiftui/wkinterfaceobjectrepresentablecontext) — context for WKInterfaceObjectRepresentable updates
+- [WKInterfaceObjectRepresentable](/documentation/swiftui/wkinterfaceobjectrepresentable) — wrap WatchKit interface object for SwiftUI; [Context](/documentation/swiftui/wkinterfaceobjectrepresentablecontext)
 
 - [Technology-specific views](/documentation/swiftui/technology-specific-views) (article)
 
@@ -89,122 +72,73 @@
 
 ### Accessing Apple Pay and Wallet
 
-- [PayWithApplePayButton](/documentation/passkit/paywithapplepaybutton) — Apple Pay payment button
-- [AddPassToWalletButton](/documentation/passkit/addpasstowalletbutton) — add pass to Wallet button
-- [VerifyIdentityWithWalletButton](/documentation/passkit/verifyidentitywithwalletbutton) — identity verification button
-- [AsyncShareablePassConfiguration](/documentation/passkit/asyncshareablepassconfiguration) — async shareable pass config
-- [func addOrderToWalletButtonStyle(_:)](/documentation/swiftui/view/addordertowalletbuttonstyle(_:))
-- [func addPassToWalletButtonStyle(_:)](/documentation/swiftui/view/addpasstowalletbuttonstyle(_:))
-- [func onApplePayCouponCodeChange(perform:)](/documentation/swiftui/view/onapplepaycouponcodechange(perform:)), [onApplePayPaymentMethodChange](/documentation/swiftui/view/onapplepaypaymentmethodchange(perform:)), [onApplePayShippingContactChange](/documentation/swiftui/view/onapplepayshippingcontactchange(perform:)), [onApplePayShippingMethodChange](/documentation/swiftui/view/onapplepayshippingmethodchange(perform:))
-- [func payLaterViewAction(_:)](/documentation/swiftui/view/paylaterviewaction(_:)), [payLaterViewDisplayStyle(_:)](/documentation/swiftui/view/paylaterviewdisplaystyle(_:))
-- [func payWithApplePayButtonStyle(_:)](/documentation/swiftui/view/paywithapplepaybuttonstyle(_:))
-- [func verifyIdentityWithWalletButtonStyle(_:)](/documentation/swiftui/view/verifyidentitywithwalletbuttonstyle(_:))
-- [func transactionTask(_:action:)](/documentation/swiftui/view/transactiontask(_:action:)) — credential transaction task
+- Buttons: [PayWithApplePayButton](/documentation/passkit/paywithapplepaybutton), [AddPassToWalletButton](/documentation/passkit/addpasstowalletbutton), [VerifyIdentityWithWalletButton](/documentation/passkit/verifyidentitywithwalletbutton); [AsyncShareablePassConfiguration](/documentation/passkit/asyncshareablepassconfiguration)
+- Button styles: [addOrderToWalletButtonStyle(_:)](/documentation/swiftui/view/addordertowalletbuttonstyle(_:)), [addPassToWalletButtonStyle(_:)](/documentation/swiftui/view/addpasstowalletbuttonstyle(_:)), [payWithApplePayButtonStyle(_:)](/documentation/swiftui/view/paywithapplepaybuttonstyle(_:)), [verifyIdentityWithWalletButtonStyle(_:)](/documentation/swiftui/view/verifyidentitywithwalletbuttonstyle(_:))
+- Apple Pay callbacks: [onApplePayCouponCodeChange(perform:)](/documentation/swiftui/view/onapplepaycouponcodechange(perform:)), [onApplePayPaymentMethodChange](/documentation/swiftui/view/onapplepaypaymentmethodchange(perform:)), [onApplePayShippingContactChange](/documentation/swiftui/view/onapplepayshippingcontactchange(perform:)), [onApplePayShippingMethodChange](/documentation/swiftui/view/onapplepayshippingmethodchange(perform:))
+- [payLaterViewAction(_:)](/documentation/swiftui/view/paylaterviewaction(_:)), [payLaterViewDisplayStyle(_:)](/documentation/swiftui/view/paylaterviewdisplaystyle(_:)), [transactionTask(_:action:)](/documentation/swiftui/view/transactiontask(_:action:))
 
 ### Authorizing and authenticating
 
-- [LocalAuthenticationView](/documentation/localauthentication/localauthenticationview) — biometric/passcode authentication view
-- [SignInWithAppleButton](/documentation/authenticationservices/signinwithapplebutton) — Sign in with Apple button
-- [func signInWithAppleButtonStyle(_:)](/documentation/swiftui/view/signinwithapplebuttonstyle(_:))
-- [var authorizationController: AuthorizationController](/documentation/swiftui/environmentvalues/authorizationcontroller)
-- [var webAuthenticationSession: WebAuthenticationSession](/documentation/swiftui/environmentvalues/webauthenticationsession)
+- [LocalAuthenticationView](/documentation/localauthentication/localauthenticationview) — biometric/passcode auth; [SignInWithAppleButton](/documentation/authenticationservices/signinwithapplebutton), [signInWithAppleButtonStyle(_:)](/documentation/swiftui/view/signinwithapplebuttonstyle(_:))
+- [var authorizationController](/documentation/swiftui/environmentvalues/authorizationcontroller), [var webAuthenticationSession](/documentation/swiftui/environmentvalues/webauthenticationsession)
 
 ### Configuring Family Sharing
 
-- [FamilyActivityPicker](/documentation/familycontrols/familyactivitypicker) — pick family activity restrictions
-- [func familyActivityPicker(isPresented:selection:)](/documentation/swiftui/view/familyactivitypicker(ispresented:selection:)) — also headerText:footerText: variant
+- [FamilyActivityPicker](/documentation/familycontrols/familyactivitypicker); [familyActivityPicker(isPresented:selection:)](/documentation/swiftui/view/familyactivitypicker(ispresented:selection:)) — also headerText:footerText: variant
 
-### Reporting on device activity
+### Reporting on device activity / Working with managed devices
 
-- [DeviceActivityReport](/documentation/deviceactivity/deviceactivityreport) — display device activity report
-
-### Working with managed devices
-
-- [func managedContentStyle(_:)](/documentation/swiftui/view/managedcontentstyle(_:))
-- [func automatedDeviceEnrollmentAddition(isPresented:)](/documentation/swiftui/view/automateddeviceenrollmentaddition(ispresented:))
+- [DeviceActivityReport](/documentation/deviceactivity/deviceactivityreport); [managedContentStyle(_:)](/documentation/swiftui/view/managedcontentstyle(_:)), [automatedDeviceEnrollmentAddition(isPresented:)](/documentation/swiftui/view/automateddeviceenrollmentaddition(ispresented:))
 
 ### Creating graphics
 
-- [Chart](/documentation/charts/chart) — Swift Charts chart view
-- [SceneView](/documentation/scenekit/sceneview) — SceneKit 3D scene view
-- [SpriteView](/documentation/spritekit/spriteview) — SpriteKit 2D sprite view
+- [Chart](/documentation/charts/chart), [SceneView](/documentation/scenekit/sceneview), [SpriteView](/documentation/spritekit/spriteview) — Charts, SceneKit, SpriteKit
 
 ### Getting location information
 
 - [LocationButton](/documentation/corelocationui/locationbutton) — one-time location access button
 - [Map](/documentation/mapkit/map) — MapKit map view
-- [func mapStyle(_:)](/documentation/swiftui/view/mapstyle(_:))
-- [func mapScope(_:)](/documentation/swiftui/view/mapscope(_:))
+- [func mapStyle(_:)](/documentation/swiftui/view/mapstyle(_:)), [mapScope(_:)](/documentation/swiftui/view/mapscope(_:))
 - [func mapFeatureSelectionDisabled(_:)](/documentation/swiftui/view/mapfeatureselectiondisabled(_:)), [mapFeatureSelectionAccessory(_:)](/documentation/swiftui/view/mapfeatureselectionaccessory(_:)), [mapFeatureSelectionContent(content:)](/documentation/swiftui/view/mapfeatureselectioncontent(content:))
 - [func mapControls(_:)](/documentation/swiftui/view/mapcontrols(_:)), [mapControlVisibility(_:)](/documentation/swiftui/view/mapcontrolvisibility(_:))
-- [func mapCameraKeyframeAnimator(trigger:keyframes:)](/documentation/swiftui/view/mapcamerakeyframeanimator(trigger:keyframes:))
-- [func lookAroundViewer(isPresented:scene:...)](/documentation/swiftui/view/lookaroundviewer(ispresented:scene:allowsnavigation:showsroadlabels:pointsofinterest:ondismiss:)) — also initialScene: variant
-- [func onMapCameraChange(frequency:_:)](/documentation/swiftui/view/onmapcamerachange(frequency:_:))
-- [func mapItemDetailPopover(isPresented:item:displaysMap:attachmentAnchor:)](/documentation/swiftui/view/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor:)) — also arrowEdge:, item: binding variants
-- [func mapItemDetailSheet(isPresented:item:displaysMap:)](/documentation/swiftui/view/mapitemdetailsheet(ispresented:item:displaysmap:)) — also item: binding variant
+- [mapCameraKeyframeAnimator(trigger:keyframes:)](/documentation/swiftui/view/mapcamerakeyframeanimator(trigger:keyframes:)), [onMapCameraChange(frequency:_:)](/documentation/swiftui/view/onmapcamerachange(frequency:_:))
+- [lookAroundViewer(isPresented:scene:...)](/documentation/swiftui/view/lookaroundviewer(ispresented:scene:allowsnavigation:showsroadlabels:pointsofinterest:ondismiss:)) — also initialScene: variant
+- [mapItemDetailPopover(isPresented:item:displaysMap:attachmentAnchor:)](/documentation/swiftui/view/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor:)) — also arrowEdge:, binding variants; [mapItemDetailSheet](/documentation/swiftui/view/mapitemdetailsheet(ispresented:item:displaysmap:))
 
 ### Displaying media
 
-- [CameraView](/documentation/homekit/cameraview) — HomeKit camera feed view
-- [NowPlayingView](/documentation/watchkit/nowplayingview) — WatchKit now-playing interface
-- [VideoPlayer](/documentation/avkit/videoplayer) — AVKit video player view
-- [func continuityDevicePicker(isPresented:onDidConnect:)](/documentation/swiftui/view/continuitydevicepicker(ispresented:ondidconnect:))
-- [func cameraAnchor(isActive:)](/documentation/swiftui/view/cameraanchor(isactive:))
+- [CameraView](/documentation/homekit/cameraview) (HomeKit), [NowPlayingView](/documentation/watchkit/nowplayingview) (WatchKit), [VideoPlayer](/documentation/avkit/videoplayer) (AVKit)
+- [continuityDevicePicker(isPresented:onDidConnect:)](/documentation/swiftui/view/continuitydevicepicker(ispresented:ondidconnect:)), [cameraAnchor(isActive:)](/documentation/swiftui/view/cameraanchor(isactive:))
 
 ### Selecting photos
 
 - [PhotosPicker](/documentation/photosui/photospicker) — system photo picker
 - [func photosPicker(isPresented:selection:matching:preferredItemEncoding:)](/documentation/swiftui/view/photospicker(ispresented:selection:matching:preferreditemencoding:)) — single; also photoLibrary:, multi (maxSelectionCount:selectionBehavior:) variants
-- [func photosPickerAccessoryVisibility(_:edges:)](/documentation/swiftui/view/photospickeraccessoryvisibility(_:edges:))
-- [func photosPickerDisabledCapabilities(_:)](/documentation/swiftui/view/photospickerdisabledcapabilities(_:))
-- [func photosPickerStyle(_:)](/documentation/swiftui/view/photospickerstyle(_:))
+- [func photosPickerAccessoryVisibility(_:edges:)](/documentation/swiftui/view/photospickeraccessoryvisibility(_:edges:)), [photosPickerDisabledCapabilities(_:)](/documentation/swiftui/view/photospickerdisabledcapabilities(_:)), [photosPickerStyle(_:)](/documentation/swiftui/view/photospickerstyle(_:))
 
 ### Previewing content
 
-- [func quickLookPreview(_:)](/documentation/swiftui/view/quicklookpreview(_:)) — Quick Look single file
-- [func quickLookPreview(_:in:)](/documentation/swiftui/view/quicklookpreview(_:in:)) — Quick Look file in collection
+- [quickLookPreview(_:)](/documentation/swiftui/view/quicklookpreview(_:)), [quickLookPreview(_:in:)](/documentation/swiftui/view/quicklookpreview(_:in:)) — Quick Look preview
 
 ### Interacting with networked devices
 
-- [DevicePicker](/documentation/devicediscoveryui/devicepicker) — discover and pick nearby devices
-- [var devicePickerSupports: DevicePickerSupportedAction](/documentation/swiftui/environmentvalues/devicepickersupports)
+- [DevicePicker](/documentation/devicediscoveryui/devicepicker) — discover nearby devices; [var devicePickerSupports](/documentation/swiftui/environmentvalues/devicepickersupports)
 
 ### Configuring a Live Activity
 
-- [func activitySystemActionForegroundColor(_:)](/documentation/swiftui/view/activitysystemactionforegroundcolor(_:))
-- [func activityBackgroundTint(_:)](/documentation/swiftui/view/activitybackgroundtint(_:))
-- [var isActivityFullscreen: Bool](/documentation/swiftui/environmentvalues/isactivityfullscreen)
-- [var activityFamily: ActivityFamily](/documentation/swiftui/environmentvalues/activityfamily)
+- [activitySystemActionForegroundColor(_:)](/documentation/swiftui/view/activitysystemactionforegroundcolor(_:)), [activityBackgroundTint(_:)](/documentation/swiftui/view/activitybackgroundtint(_:))
+- [var isActivityFullscreen](/documentation/swiftui/environmentvalues/isactivityfullscreen), [var activityFamily](/documentation/swiftui/environmentvalues/activityfamily)
 
 ### Interacting with the App Store and Apple Music
 
-- [func appStoreOverlay(isPresented:configuration:)](/documentation/swiftui/view/appstoreoverlay(ispresented:configuration:))
-- [func manageSubscriptionsSheet(isPresented:)](/documentation/swiftui/view/managesubscriptionssheet(ispresented:)) — also subscriptionGroupID: variant
-- [func refundRequestSheet(for:isPresented:onDismiss:)](/documentation/swiftui/view/refundrequestsheet(for:ispresented:ondismiss:))
-- [func offerCodeRedemption(isPresented:onCompletion:)](/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:))
-- [func musicSubscriptionOffer(isPresented:options:onLoadCompletion:)](/documentation/swiftui/view/musicsubscriptionoffer(ispresented:options:onloadcompletion:))
-- [func currentEntitlementTask(for:priority:action:)](/documentation/swiftui/view/currententitlementtask(for:priority:action:))
-- [func inAppPurchaseOptions(_:)](/documentation/swiftui/view/inapppurchaseoptions(_:))
-- [func onInAppPurchaseCompletion(perform:)](/documentation/swiftui/view/oninapppurchasecompletion(perform:))
-- [func onInAppPurchaseStart(perform:)](/documentation/swiftui/view/oninapppurchasestart(perform:))
-- [func productIconBorder()](/documentation/swiftui/view/producticonborder())
-- [func productViewStyle(_:)](/documentation/swiftui/view/productviewstyle(_:))
-- [func productDescription(_:)](/documentation/swiftui/view/productdescription(_:))
-- [func storeButton(_:for:)](/documentation/swiftui/view/storebutton(_:for:))
-- [func storeProductTask(for:priority:action:)](/documentation/swiftui/view/storeproducttask(for:priority:action:))
-- [func storeProductsTask(for:priority:action:)](/documentation/swiftui/view/storeproductstask(for:priority:action:))
+- Overlays/sheets: [appStoreOverlay(isPresented:configuration:)](/documentation/swiftui/view/appstoreoverlay(ispresented:configuration:)), [manageSubscriptionsSheet(isPresented:)](/documentation/swiftui/view/managesubscriptionssheet(ispresented:)), [refundRequestSheet(for:isPresented:onDismiss:)](/documentation/swiftui/view/refundrequestsheet(for:ispresented:ondismiss:)), [offerCodeRedemption(isPresented:onCompletion:)](/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:)), [musicSubscriptionOffer(isPresented:options:onLoadCompletion:)](/documentation/swiftui/view/musicsubscriptionoffer(ispresented:options:onloadcompletion:))
+- IAP: [currentEntitlementTask(for:priority:action:)](/documentation/swiftui/view/currententitlementtask(for:priority:action:)), [inAppPurchaseOptions(_:)](/documentation/swiftui/view/inapppurchaseoptions(_:)), [onInAppPurchaseCompletion(perform:)](/documentation/swiftui/view/oninapppurchasecompletion(perform:)), [onInAppPurchaseStart(perform:)](/documentation/swiftui/view/oninapppurchasestart(perform:))
+- Product: [productIconBorder()](/documentation/swiftui/view/producticonborder()), [productViewStyle(_:)](/documentation/swiftui/view/productviewstyle(_:)), [productDescription(_:)](/documentation/swiftui/view/productdescription(_:))
+- Store: [storeButton(_:for:)](/documentation/swiftui/view/storebutton(_:for:)), [storeProductTask(for:priority:action:)](/documentation/swiftui/view/storeproducttask(for:priority:action:)), [storeProductsTask(for:priority:action:)](/documentation/swiftui/view/storeproductstask(for:priority:action:))
 - [func subscriptionStatusTask(for:priority:action:)](/documentation/swiftui/view/subscriptionstatustask(for:priority:action:))
-- [func subscriptionStoreButtonLabel(_:)](/documentation/swiftui/view/subscriptionstorebuttonlabel(_:))
-- [func subscriptionStoreControlIcon(icon:)](/documentation/swiftui/view/subscriptionstorecontrolicon(icon:))
-- [func subscriptionStoreControlStyle(_:)](/documentation/swiftui/view/subscriptionstorecontrolstyle(_:)) — also placement: variant
-- [func subscriptionStoreOptionGroupStyle(_:)](/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(_:))
-- [func subscriptionStorePickerItemBackground(_:)](/documentation/swiftui/view/subscriptionstorepickeritembackground(_:)) — also in: shape variant
-- [func subscriptionStorePolicyDestination(for:destination:)](/documentation/swiftui/view/subscriptionstorepolicydestination(for:destination:)) — also url:for: variant
-- [func subscriptionStorePolicyForegroundStyle(_:)](/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(_:)) — also 2-style variant
-- [func subscriptionStoreSignInAction(_:)](/documentation/swiftui/view/subscriptionstoresigninaction(_:))
-- [func subscriptionStoreControlBackground(_:)](/documentation/swiftui/view/subscriptionstorecontrolbackground(_:))
-- [func subscriptionPromotionalOffer(offer:signature:)](/documentation/swiftui/view/subscriptionpromotionaloffer(offer:signature:))
-- [func preferredSubscriptionOffer(_:)](/documentation/swiftui/view/preferredsubscriptionoffer(_:))
+- Subscription store: [subscriptionStoreButtonLabel(_:)](/documentation/swiftui/view/subscriptionstorebuttonlabel(_:)), [subscriptionStoreControlIcon(icon:)](/documentation/swiftui/view/subscriptionstorecontrolicon(icon:)), [subscriptionStoreControlStyle(_:)](/documentation/swiftui/view/subscriptionstorecontrolstyle(_:)), [subscriptionStoreControlBackground(_:)](/documentation/swiftui/view/subscriptionstorecontrolbackground(_:)), [subscriptionStoreOptionGroupStyle(_:)](/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(_:))
+- Subscription store extras: [subscriptionStorePickerItemBackground(_:)](/documentation/swiftui/view/subscriptionstorepickeritembackground(_:)), [subscriptionStorePolicyDestination(for:destination:)](/documentation/swiftui/view/subscriptionstorepolicydestination(for:destination:)), [subscriptionStorePolicyForegroundStyle(_:)](/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(_:)), [subscriptionStoreSignInAction(_:)](/documentation/swiftui/view/subscriptionstoresigninaction(_:))
+- Offers: [subscriptionPromotionalOffer(offer:signature:)](/documentation/swiftui/view/subscriptionpromotionaloffer(offer:signature:)), [preferredSubscriptionOffer(_:)](/documentation/swiftui/view/preferredsubscriptionoffer(_:))
 
 ### Accessing health data
 
@@ -213,17 +147,11 @@
 
 ### Providing tips
 
-- [func popoverTip(_:arrowEdge:action:)](/documentation/swiftui/view/popovertip(_:arrowedge:action:))
-- [func tipBackground(_:)](/documentation/swiftui/view/tipbackground(_:))
-- [func tipCornerRadius(_:antialiased:)](/documentation/swiftui/view/tipcornerradius(_:antialiased:))
-- [func tipImageSize(_:)](/documentation/swiftui/view/tipimagesize(_:))
-- [func tipViewStyle(_:)](/documentation/swiftui/view/tipviewstyle(_:))
-- [func tipImageStyle(_:)](/documentation/swiftui/view/tipimagestyle(_:)) — also 2- and 3-style overloads
+- [popoverTip(_:arrowEdge:action:)](/documentation/swiftui/view/popovertip(_:arrowedge:action:)), [tipBackground(_:)](/documentation/swiftui/view/tipbackground(_:)), [tipCornerRadius(_:antialiased:)](/documentation/swiftui/view/tipcornerradius(_:antialiased:)), [tipImageSize(_:)](/documentation/swiftui/view/tipimagesize(_:)), [tipViewStyle(_:)](/documentation/swiftui/view/tipviewstyle(_:)), [tipImageStyle(_:)](/documentation/swiftui/view/tipimagestyle(_:))
 
 ### Showing a translation
 
-- [func translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:)](/documentation/swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:))
-- [func translationTask(_:action:)](/documentation/swiftui/view/translationtask(_:action:)) — config-based; also source:target: and source:target:preferredStrategy: variants
+- [translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:)](/documentation/swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:)), [translationTask(_:action:)](/documentation/swiftui/view/translationtask(_:action:)) — also source:target: variants
 
 ### Presenting journaling suggestions
 
@@ -231,25 +159,12 @@
 
 ### Managing contact access
 
-- [func contactAccessButtonCaption(_:)](/documentation/swiftui/view/contactaccessbuttoncaption(_:))
-- [func contactAccessButtonStyle(_:)](/documentation/swiftui/view/contactaccessbuttonstyle(_:))
-- [func contactAccessPicker(isPresented:completionHandler:)](/documentation/swiftui/view/contactaccesspicker(ispresented:completionhandler:))
+- [contactAccessButtonCaption(_:)](/documentation/swiftui/view/contactaccessbuttoncaption(_:)), [contactAccessButtonStyle(_:)](/documentation/swiftui/view/contactaccessbuttonstyle(_:)), [contactAccessPicker(isPresented:completionHandler:)](/documentation/swiftui/view/contactaccesspicker(ispresented:completionhandler:))
 
-### Handling game controller events
+### Games, camera, and transactions
 
-- [func handlesGameControllerEvents(matching:)](/documentation/swiftui/view/handlesgamecontrollerevents(matching:))
-
-### Creating a tabletop game
-
-- [func tabletopGame(_:parent:automaticUpdate:)](/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:)) — also interaction: variant
-
-### Configuring camera controls
-
-- [var realityViewCameraControls: CameraControls](/documentation/swiftui/environmentvalues/realityviewcameracontrols)
-- [func realityViewCameraControls(_:)](/documentation/swiftui/view/realityviewcameracontrols(_:))
-
-### Interacting with transactions
-
+- [func handlesGameControllerEvents(matching:)](/documentation/swiftui/view/handlesgamecontrollerevents(matching:)), [tabletopGame(_:parent:automaticUpdate:)](/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:)) — also interaction: variant
+- [var realityViewCameraControls](/documentation/swiftui/environmentvalues/realityviewcameracontrols), [func realityViewCameraControls(_:)](/documentation/swiftui/view/realityviewcameracontrols(_:))
 - [func transactionPicker(isPresented:selection:)](/documentation/swiftui/view/transactionpicker(ispresented:selection:))
 
 ---
@@ -263,56 +178,29 @@
 
 ### Creating a preview
 
-- [macro Preview(_:body:)](/documentation/swiftui/preview(_:body:))
-- [macro Preview(_:traits:_:body:)](/documentation/swiftui/preview(_:traits:_:body:)) — with traits
-- [macro Preview(_:traits:body:cameras:)](/documentation/swiftui/preview(_:traits:body:cameras:)) — with cameras
-
-### Creating a preview in the context of a scene
-
-- [macro Preview(_:immersionStyle:traits:body:)](/documentation/swiftui/preview(_:immersionstyle:traits:body:)) — also cameras: variant
-- [macro Preview(_:windowStyle:traits:body:)](/documentation/swiftui/preview(_:windowstyle:traits:body:)) — also cameras: variant
+- [macro Preview(_:body:)](/documentation/swiftui/preview(_:body:)) — also traits:, cameras: variants
+- [macro Preview(_:immersionStyle:traits:body:)](/documentation/swiftui/preview(_:immersionstyle:traits:body:)) — scene context; also cameras:, windowStyle: variants
 
 ### Defining a preview
 
-- [macro Previewable()](/documentation/swiftui/previewable()) — make @State usable in #Preview
-- [PreviewProvider](/documentation/swiftui/previewprovider) — protocol for legacy preview definitions
-- [PreviewPlatform](/documentation/swiftui/previewplatform) — target platform for preview (iOS, macOS, tvOS, watchOS)
-- [func previewDisplayName(_:)](/documentation/swiftui/view/previewdisplayname(_:))
-- [PreviewModifier](/documentation/swiftui/previewmodifier) — protocol to inject shared context into previews
-- [PreviewModifierContent](/documentation/swiftui/previewmodifiercontent) — content type for PreviewModifier
+- [macro Previewable()](/documentation/swiftui/previewable()) — make @State usable in #Preview; [func previewDisplayName(_:)](/documentation/swiftui/view/previewdisplayname(_:))
+- [PreviewProvider](/documentation/swiftui/previewprovider) — legacy preview protocol; [PreviewPlatform](/documentation/swiftui/previewplatform) — iOS, macOS, tvOS, watchOS
+- [PreviewModifier](/documentation/swiftui/previewmodifier) — inject shared context; [PreviewModifierContent](/documentation/swiftui/previewmodifiercontent)
 
 ### Customizing a preview
 
-- [func previewDevice(_:)](/documentation/swiftui/view/previewdevice(_:))
-- [PreviewDevice](/documentation/swiftui/previewdevice) — device specifier for previews
-- [func previewLayout(_:)](/documentation/swiftui/view/previewlayout(_:))
-- [func previewInterfaceOrientation(_:)](/documentation/swiftui/view/previewinterfaceorientation(_:))
-- [InterfaceOrientation](/documentation/swiftui/interfaceorientation) — portrait, portraitUpsideDown, landscapeLeft, landscapeRight
-
-### Setting a context
-
-- [func previewContext(_:)](/documentation/swiftui/view/previewcontext(_:))
-- [PreviewContext](/documentation/swiftui/previewcontext) — key-value context for previews
-- [PreviewContextKey](/documentation/swiftui/previewcontextkey) — define custom preview context keys
+- [func previewDevice(_:)](/documentation/swiftui/view/previewdevice(_:)), [previewLayout(_:)](/documentation/swiftui/view/previewlayout(_:)), [previewInterfaceOrientation(_:)](/documentation/swiftui/view/previewinterfaceorientation(_:))
+- [PreviewDevice](/documentation/swiftui/previewdevice), [InterfaceOrientation](/documentation/swiftui/interfaceorientation) — portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+- [func previewContext(_:)](/documentation/swiftui/view/previewcontext(_:)), [PreviewContext](/documentation/swiftui/previewcontext), [PreviewContextKey](/documentation/swiftui/previewcontextkey)
 
 ### Building in debug mode
 
 - [DebugReplaceableView](/documentation/swiftui/debugreplaceableview) — placeholder view replaced at runtime in debug
 - [Xcode library customization](/documentation/swiftui/xcode-library-customization) (article)
-
-### Creating library items
-
-- [LibraryContentProvider](/documentation/developertoolssupport/librarycontentprovider) — provide custom items to Xcode library
-- [LibraryItem](/documentation/developertoolssupport/libraryitem) — single Xcode library entry
-
-- [Performance analysis](/documentation/swiftui/performance-analysis) (article)
-
-### Essentials
-
-- [Understanding user interface responsiveness](/documentation/xcode/understanding-user-interface-responsiveness) (article)
-- [Understanding hangs in your app](/documentation/xcode/understanding-hangs-in-your-app) (article)
-- [Understanding hitches in your app](/documentation/xcode/understanding-hitches-in-your-app) (article)
+- [LibraryContentProvider](/documentation/developertoolssupport/librarycontentprovider), [LibraryItem](/documentation/developertoolssupport/libraryitem) — Xcode library items
 
 ### Analyzing SwiftUI performance
 
+- [Performance analysis](/documentation/swiftui/performance-analysis) (article)
+- [Understanding user interface responsiveness](/documentation/xcode/understanding-user-interface-responsiveness) (article), [Understanding hangs](/documentation/xcode/understanding-hangs-in-your-app) (article), [Understanding hitches](/documentation/xcode/understanding-hitches-in-your-app) (article)
 - [Understanding and improving SwiftUI performance](/documentation/xcode/understanding-and-improving-swiftui-performance) (article)
