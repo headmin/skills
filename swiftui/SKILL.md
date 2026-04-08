@@ -1,6 +1,8 @@
 ---
 name: swiftui
 description: SwiftUI API reference for macOS, iOS, visionOS. Use this skill whenever writing, reviewing, or debugging SwiftUI code — views, modifiers, layout, animation, data flow, event handling, accessibility, or UIKit/AppKit integration. Also use when the user asks about SwiftUI APIs, view modifiers, property wrappers, or needs to verify correct API usage for a specific Swift/platform version.
+allowed-tools: Read, Grep, Glob, Edit, Write, Bash, WebFetch
+effort: high
 ---
 
 # SwiftUI API Reference
@@ -19,6 +21,14 @@ Complete SwiftUI framework reference from Apple Developer Documentation (2026).
    Example: `/documentation/swiftui/view/disabled(_:)` → fetch `https://developer.apple.com/tutorials/data/documentation/swiftui/view/disabled(_:).json`
    
    The JSON response contains `abstract`, `primaryContentSections` (declarations, parameters, discussion, code listings), and `metadata` (platform availability).
+
+5. **Parsing JSON docs with jq:** For large responses, use `jq` via Bash to extract specific sections:
+   ```bash
+   # Get declarations and parameters
+   curl -s 'https://developer.apple.com/tutorials/data/documentation/swiftui/view/disabled(_:).json' | jq '.primaryContentSections'
+   # Get platform availability
+   curl -s 'https://developer.apple.com/tutorials/data/documentation/swiftui/view/disabled(_:).json' | jq '.metadata.platforms'
+   ```
 
 ## Topic Index
 
